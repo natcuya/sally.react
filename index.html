@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sally Student's Resume</title>
+    <meta name="description" content="Sally Student is a good student and you should hire her!">
+    <link href="./index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js"
+  crossorigin>
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+  crossorigin>
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js"
+  crossorigin>
+</script>
+
+<script type="text/babel">
+  const app = document.getElementById('app');
+  const resume = (
+    <div>
+        <header>
+      <h1>Sally Student</h1>
+    </header>
+    
+    <main>
+      <section id="contact">
+        <h2>Contact</h2>
+        
+        <address>
+          <p>sally@student.com</p>
+          <p>555-5555</p>
+        </address>
+        <img src="./sally.jpg" alt="A picture of Sally Student"/>
+      </section>
+      
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>Thinkful College</strong></li>
+        </ul>
+      </section>
+      
+      <section id="employment">
+        <h2>Employment History</h2>
+        <ul>
+          <li>
+            <strong>Red Rhino</strong>
+            <p>Web Enthusiast</p>
+            <p>Jan 1st, 2018 - Jan 2nd, 2018</p>
+            <p>My job was to be enthusiastic about websites</p>
+          </li>
+          
+          <li>
+            
+            <strong>Blue Elephant</strong>
+            <p>Lead Web Developer</p>
+            <p>Jan 2nd, 2018 - Jan 3rd, 2018</p>
+            <p>I was hired on the web developer team leader</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    </div>
+);
+
+ReactDOM.render(resume, app);
+</script>
+</body>
+</html>
